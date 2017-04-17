@@ -59,6 +59,163 @@ h6.headline, .h6.headline {
   font-size: 2rem;
   letter-spacing: -1.3px;
 }
+/*999999999999999999999999999999999999999999999999999999999999999999999999999999
+999999999999999999999999999999999999999999999999999999999999999999999999999999*/
+#Botão_Teste_Cont{
+	background: transparency;
+	margin: 0 auto;
+	padding: 0px;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	backface-visibility: hidden;
+	letter-spacing: normal;
+	position: fixed;
+}
+#Botão_Teste_Cont .botão_cabeçalho{
+	background: green;
+	display: inline-block;
+	padding-left: 0;
+	width: 100%;
+	vertical-align: middle;
+	height: 100%;
+	white-space: nowrap;
+	width: 96px;
+	height: 6.0rem;
+	float: none;
+}
+#Botão_Teste_Cont .cabeçalho_logo{
+	background: #fff;
+	width: 15rem;
+	display: inline-block;
+	padding-left: 0;
+	vertical-align: top;
+	height: 100%;
+	text-align: center;
+	font-size: 0;
+	vertical-align: middle;
+}
+#Botão_Teste_Cont .cabeçalho_logo:hover .cabeçalho_logo_span{
+		transform: translateY(-5px);
+}
+#Botão_Teste_Cont .cabeçalho_logo_span{
+	background: transparent;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 2rem;
+	white-space: normal;
+	line-height: 6.0rem;
+	top: 5rem;
+	white-space: nowrap;
+	text-decoration: underline;
+	color: #000;
+}
+
+
+#Botão_Teste_Cont .item{
+	background: transparent;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	width: 96px;
+	height: 100%;
+	font-size: 0;
+	text-indent: -9999px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	-webkit-transition: background 0.3s;
+	transition: background 0.3s;
+}
+#Botão_Teste_Cont .item:focus {
+  outline: none;
+}
+#Botão_Teste_Cont .item span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: white;
+}
+#Botão_Teste_Cont .item span::before,
+#Botão_Teste_Cont .item span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  content: "";
+}
+#Botão_Teste_Cont .item span::before{
+	top: -20px;
+}
+#Botão_Teste_Cont .item span::after{
+	bottom: -20px;
+}
+#Botão_Teste_Cont .item2{
+	background: #000;
+}
+
+.#Botão_Teste_Cont .item2 span {
+  transition: background 0s 0.3s;
+}
+
+#Botão_Teste_Cont .item2 span::before,
+#Botão_Teste_Cont .item2 span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+#Botão_Teste_Cont .item2 span::before {
+  transition-property: top, transform;
+}
+
+#Botão_Teste_Cont .item2 span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+#Botão_Teste_Cont .item2.is-active {
+  background-color: rgba(27, 27, 27, 1);
+}
+
+#Botão_Teste_Cont .item2.is-active span {
+  background: none;
+}
+
+#Botão_Teste_Cont .item2.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+#Botão_Teste_Cont .item2.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+#Botão_Teste_Cont .item2.is-active span::before,
+#Botão_Teste_Cont .item2.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+/*999999999999999999999999999999999999999999999999999999999999999999999999999999
+999999999999999999999999999999999999999999999999999999999999999999999999999999*/
+
+
+
+
+
+
+
 .text-size-12, .text-l-size-12 {
   font-size: 12px !important;
   line-height: 1.4;
