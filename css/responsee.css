@@ -196,13 +196,13 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
     padding-top: 1.3rem;
   }
   #Botão_Teste_Cont .cabeçalho_logo{
-    width: 12rem;
+    width: 10rem;
   }
   #Botão_Teste_Cont .cabeçalho_logo_span{
-    line-height: 4rem;
+    line-height: 2rem;
   }
   #Botão_Teste_Cont .botão_cabeçalho{
-    height: 4rem;
+    height: 2rem;
   }
   .aside-nav .count-number {
 	  margin-left:-1.25rem;
