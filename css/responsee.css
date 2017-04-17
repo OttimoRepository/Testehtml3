@@ -195,15 +195,10 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   #Alinhamento_Automação{
     padding-top: 1.3rem;
   }
-  #Botão_Teste_Cont .cabeçalho_logo{
-    width: 10rem;
+  #Botão_Teste_Cont{
+    width: 30%;
   }
-  #Botão_Teste_Cont .cabeçalho_logo_span{
-    line-height: 2rem;
-  }
-  #Botão_Teste_Cont .botão_cabeçalho{
-    height: 2rem;
-  }
+
   .aside-nav .count-number {
 	  margin-left:-1.25rem;
 	  float:right;
@@ -488,6 +483,13 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   .m-12 {width:100%}
 }
 @media screen and (max-width:480px) {
+  #Botão_Teste_Cont{
+    width: 100%;
+  }
+
+
+
+
   .size-960,.size-1140,.size-1280 {max-width:480px;}
   .aside-nav li a {text-align: center;}
   .minimize-on-small .aside-nav-text {
