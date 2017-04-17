@@ -198,6 +198,12 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   #Botão_Teste_Cont{
     width: 30%;
   }
+  #Botão_Teste_Cont .cabeçalho_logo_span{
+    line-height: 6.0rem;
+  }
+  #Botão_Teste_Cont .botão_cabeçalho{
+    height: 6.0rem;
+  }
   #MenuOculto .publicidade{
 		width: 200px;
 		height: 100%;
@@ -384,6 +390,20 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .right {float:right;}
 .left {float:left;}
 @media screen and (max-width:768px) {
+  #Botão_Teste_Cont{
+    width: 50%;
+  }
+#Botão_Teste_Cont .cabeçalho_logo_span{
+  line-height: 4rem;
+}
+#Botão_Teste_Cont .botão_cabeçalho{
+  height: 4rem;
+}
+
+
+
+
+
   .size-960,.size-1140,.size-1280 {max-width:768px;}
   .hide-l,.hide-s {display:block;}
   .hide-m {display:none;}
@@ -518,6 +538,12 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 @media screen and (max-width:480px) {
   #Botão_Teste_Cont{
     width: 100%;
+  }
+  #Botão_Teste_Cont .cabeçalho_logo_span{
+    line-height: 4rem;
+  }
+  #Botão_Teste_Cont .botão_cabeçalho{
+    height: 4rem;
   }
   #MenuOculto .publicidade{
 		width: 100%;
