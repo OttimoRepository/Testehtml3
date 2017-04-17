@@ -553,6 +553,9 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
     top: 5.5rem;
     position: relative;
   }
+  img{
+    height: 30rem
+  }
 
 
 
