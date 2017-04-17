@@ -75,10 +75,7 @@ h6.headline, .h6.headline {
 }
 #MenuOculto h2 a{
 	color: #fff;
-	margin-left: 10rem;
 	text-decoration: none;
-	line-height: 8rem;
-	font-size: 5rem;
 	z-index: 999;
 }
 #MenuOculto h2 a:hover{
@@ -92,11 +89,8 @@ h6.headline, .h6.headline {
 
 #MenuOculto .publicidade {
 	background: #000;
-	width: 200px;
-	height: 100%;
 	position: absolute;
 	right: 0px;
-	top: 0px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -107,37 +101,24 @@ h6.headline, .h6.headline {
 	top: 0;
 	left: 0;
 	background: transparent;
-	height: 7.5rem;
 	vertical-align: middle;
-	line-height: 7.5rem;
 	display: inline-block;
 }
 #MenuOculto .publicidade .face {
 	background: url("../img/face.png") no-repeat center;
 	background-size: 100%;
 	position: absolute;
-	width: 50px;
-	height: 50px;
-	top: 150px;
 	left: 75px;
 }
 #MenuOculto .publicidade .insta {
 background: url("../img/insta.png") no-repeat center;
 background-size: 100%;
 position: absolute;
-width: 50px;
-height: 50px;
-top: 250px;
-left: 75px;
 }
 #MenuOculto .publicidade .linkein {
 background: url("../img/linkedin.png") no-repeat center;
 background-size: 100%;
 position: absolute;
-width: 50px;
-height: 50px;
-top: 350px;
-left: 75px;
 }
 #MenuOculto .publicidade a:hover{
 	opacity: .8;
