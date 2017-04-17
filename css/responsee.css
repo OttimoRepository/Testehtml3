@@ -179,8 +179,21 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   color:#fff;
 }
 @media screen and (min-width:769px) {
-  #Alinhamento{
+  #Alinhamento_TI{
     margin-left: 12rem;
+  }
+  #Espaçamento_Teleco{
+    padding-bottom: 6.25rem;
+  }
+  #Alinhamento_Infra{
+    margin-left: 12rem;
+    padding-top: 1.3rem;
+  }
+  #Espaçamento_Infra{
+    padding-bottom: 4.688rem;
+  }
+  #Alinhamento_Automação{
+    padding-top: 1.3rem;
   }
   .aside-nav .count-number {
 	  margin-left:-1.25rem;
