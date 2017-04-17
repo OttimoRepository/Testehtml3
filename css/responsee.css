@@ -195,6 +195,15 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   #Alinhamento_Automação{
     padding-top: 1.3rem;
   }
+  #Botão_Teste_Cont .cabeçalho_logo{
+    width: 12rem;
+  }
+  #Botão_Teste_Cont .cabeçalho_logo_span{
+    line-height: 4rem;
+  }
+  #Botão_Teste_Cont .botão_cabeçalho{
+    height: 4rem;
+  }
   .aside-nav .count-number {
 	  margin-left:-1.25rem;
 	  float:right;
