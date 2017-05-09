@@ -9,6 +9,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'Charlevoix';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/CharlevoixPro-Thin.otf');
+}
 
 .icon-cloud,
 .icon-at,
@@ -201,7 +207,7 @@
   font-variant: normal;
   font-weight: normal;
   color:#e3e3e3;
-  speak: none; 
+  speak: none;
   text-transform: none;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -593,7 +599,7 @@
 .icon-sli-social-youtube,
 .icon-sli-social-dropbox {
   font-family: 'sli';
-  font-style: normal;  
+  font-style: normal;
   font-variant: normal;
   font-weight: normal;
   color:#e3e3e3;

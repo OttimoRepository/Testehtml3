@@ -184,6 +184,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   }
   #Espaçamento_Teleco{
     padding-bottom: 6.25rem;
+    text-align: justify;
   }
   #Alinhamento_Infra{
     margin-left: 12rem;
@@ -191,12 +192,13 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   }
   #Espaçamento_Infra{
     padding-bottom: 4.688rem;
+    text-align: justify;
   }
   #Alinhamento_Automação{
     padding-top: 1.3rem;
   }
   #Botão_Teste_Cont{
-    width: 30%;
+    width: 10%;
   }
   #Botão_Teste_Cont .cabeçalho_logo_span{
     line-height: 6.0rem;

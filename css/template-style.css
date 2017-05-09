@@ -8,6 +8,7 @@ p {
   color: #777;
   font-size: 0.85rem;
   line-height: 1.6rem;
+  text-align: justify;
 }
 a, a:link, a:visited, a:hover, a:active {
 color: #777;
@@ -59,8 +60,102 @@ h6.headline, .h6.headline {
   font-size: 2rem;
   letter-spacing: -1.3px;
 }
+.Slide_Home{
+  position: relative;
+  background-color: #004140;
+  padding: 22rem 1.25rem;
+}
+.Slides{
+  display: none;
+}
+.Slide_Logo{
+  width: 13%;
+  background-color: transparent;
+  position: absolute;
+  left: 23%;
+  top: 46%;
+  animation-name: logoMove;
+  animation-duration: 5s;
+  /*animation-fill-mode: both;
+  animation-iteration-count: 1;*/
+
+}
+@keyframes logoMove {
+  from{ transform: translateX(-800px);}
+  to{ transform: translateX(0px);}
+}
+.Slide_Nome{
+  width: 40%;
+  background: transparent;
+  position: absolute;
+  left: 38%;
+  top: 46%;
+  animation-name: nomeMove;
+  animation-duration: 3s;
+  /*animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-delay: 6s;*/
+}
+@keyframes nomeMove {
+  from{ transform: translateX(-1200px);}
+  to{ transform: translateX(0px);}
+}
+.Slide_Slogan{
+  width: 40%;
+  background: transparent;
+  position: absolute;
+  left: 38%;
+  top: 69%;
+  animation-name: sloganMove;
+  animation-duration: 5s;
+  /*animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-delay: 12s;*/
+}
+@keyframes sloganMove {
+  from{ opacity: 0;}
+  to{ opacity: 1;}
+}
+.Slide_Visual{
+  width: 80%;
+  background: transparent;
+  position: absolute;
+  left: 11%;
+  top: -7%;
+  animation-name: Slide_Visual;
+  animation-duration: 5s;
+}
+@keyframes Slide_Visual {
+  from{ opacity: 0;}
+  to{ opacity: 1;}
+}
+.Slide_Visual2{
+  width: 80%;
+  background: transparent;
+  position: absolute;
+  left: 11%;
+  top: -7%;
+  animation-name: Slide_Visual2;
+  animation-duration: 3s;
+}
+@keyframes Slide_Visual2 {
+  from{ opacity: 0.5;}
+  to{ opacity: 1;}
+}
+
+
 /*999999999999999999999999999999999999999999999999999999999999999999999999999999
 999999999999999999999999999999999999999999999999999999999999999999999999999999*/
+#Contato2 p.h1, #Botão_Teste_Cont span.cabeçalho_logo_span{
+  font-family: Charlevoix;
+  text-align: center;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+}
+#Botão_Teste_Cont button span ::after{
+  background: #000;
+}
+
 #MenuOculto{
 	height: 100%;
 	width: 100%;
@@ -139,7 +234,6 @@ position: absolute;
 	position: fixed;
 }
 #Botão_Teste_Cont .botão_cabeçalho{
-	background: green;
 	display: inline-block;
 	padding-left: 0;
 	vertical-align: middle;
@@ -150,7 +244,7 @@ position: absolute;
 	float: none;
 }
 #Botão_Teste_Cont .cabeçalho_logo{
-	background: #fff;
+	background: transparent;
 	width: 60%;
 	display: inline-block;
 	padding-left: 0;
@@ -173,7 +267,7 @@ position: absolute;
 	top: 5rem;
 	white-space: nowrap;
 	text-decoration: underline;
-	color: #000;
+	color: #fff;
 }
 
 
@@ -198,6 +292,7 @@ position: absolute;
 	cursor: pointer;
 	-webkit-transition: background 0.3s;
 	transition: background 0.3s;
+  background: #fff;
 }
 #Botão_Teste_Cont .item:focus {
   outline: none;
@@ -209,7 +304,7 @@ position: absolute;
   left: 18px;
   right: 18px;
   height: 8px;
-  background: white;
+  background: #fff;
 }
 #Botão_Teste_Cont .item span::before,
 #Botão_Teste_Cont .item span::after {
@@ -218,9 +313,24 @@ position: absolute;
   left: 0;
   width: 100%;
   height: 8px;
-  background-color: #fff;
+  background: #fff;
   content: "";
 }
+#Botão_Teste_Cont .item span.rolagem::before,
+#Botão_Teste_Cont .item span.rolagem::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #004140;
+  content: "";
+}
+#Botão_Teste_Cont .item span.ConversaoX::before,
+#Botão_Teste_Cont .item span.ConversaoX::after {
+  background: #fff;
+}
+
 #Botão_Teste_Cont .item span::before{
 	top: -20px;
 }
@@ -228,7 +338,7 @@ position: absolute;
 	bottom: -20px;
 }
 #Botão_Teste_Cont .item2{
-	background: #000;
+	background: transparent;
 }
 
 .#Botão_Teste_Cont .item2 span {
@@ -272,6 +382,19 @@ position: absolute;
 #Botão_Teste_Cont .item2.is-active span::after {
   transition-delay: 0s, 0.3s;
 }
+
+#TextoJustificado{
+  text-align: justify;
+}
+
+.LogoContato{
+  width: 22%;
+  float: left;
+  height: 33vh;
+}
+
+
+
 /*999999999999999999999999999999999999999999999999999999999999999999999999999999
 999999999999999999999999999999999999999999999999999999999999999999999999999999*/
 
@@ -710,9 +833,10 @@ aside.aside-left {
 }
 .background-primary, .primary-color-primary .background-primary {
   background-color: #C81010 !important;
+  opacity: .7;
 }
 .background-dark, .primary-color-dark .background-primary {
-  background-color: #002633 !important;
+  background-color: #004140 !important;
 }
 /* Background Opacity */
 .background-white.background-transparent, .primary-color-white .background-primary.background-transparent {
@@ -876,7 +1000,7 @@ aside.aside-left {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .padding {
-  padding: 1.25rem!important;
+  padding: .25rem!important;
 }
 .padding-2x {
   padding: 2.5rem!important;
