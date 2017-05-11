@@ -2242,6 +2242,17 @@ p.form-success {
         line-height: 1.4;
     }
 }
+@media screen and (max-height:480px) {
+  #MenuOculto h2 a{
+    top: 0rem;
+  }
+  #MenuOculto h2{
+    margin-bottom: -6px;
+  }
+  #Botão_Teste_Cont{
+    width: 15%;
+  }
+}
 
 /* Typography */
 .text-uppercase {
