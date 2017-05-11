@@ -67,20 +67,29 @@ function showSlides() {
   // Sticky Nav Bar
   $(window).scroll(function() {
     var distancia = $('#Sobre').offset().top;
+    var distancia2 = $('#Formulario').offset().top;
 
     if ($("#MenuOculto").hasClass("visivel")) {}else {
       if ($(this).scrollTop() >= distancia-64){
+        if ($(this).scrollTop() >= distancia2-64) {
+          $('.item span').css('background', '#fff');
+          $('#Botão_Teste_Cont .cabeçalho_logo').css('background', 'transparent');
+          $('#Botão_Teste_Cont .item2 span').removeClass('rolagem');
+          $('#Botão_Teste_Cont .cabeçalho_logo_span').css('color', '#fff');
+        }else {
           $('.item span').css('background', '#004140');
           $('#Botão_Teste_Cont .cabeçalho_logo').css('background', '#fff');
           $('#Botão_Teste_Cont .item2 span').addClass('rolagem');
           $('#Botão_Teste_Cont .cabeçalho_logo_span').css('color', '#000');
+        }
       }
       else{
           $('.item span').css('background', '#fff');
           $('#Botão_Teste_Cont .cabeçalho_logo').css('background', 'transparent');
           $('#Botão_Teste_Cont .item2 span').removeClass('rolagem');
           $('#Botão_Teste_Cont .cabeçalho_logo_span').css('color', '#fff');
-    }
+      }
+
     }
   });
 //-------------------------------------------------------
