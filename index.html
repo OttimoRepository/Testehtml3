@@ -16,6 +16,33 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script>
+      function (id){return document.getElementsById(id);}
+      function submitForm()
+      {
+        _("mybtn").disabled = true;
+        _("status").innerHTML = 'aguarde...';
+        var formdata = new FormData();
+        formdata.append( "n", _("n").value );
+        formdata.append( "e", _("e").value );
+        formdata.append( "m", _("m").value );
+        var ajax = new XMLHttpRequest();
+        ajax.open( "POST", "Mail.php");
+        ajax.onreadystatechange = function()
+        { if (ajax.readyState == 4 && ajax.status == 200) {
+          if (ajax.responseText == "sucesso")
+          {
+            _("my_form").innerHTML = '<h2>Obrigado '+_("n").value+', sua solicitação foi enviada</h2>';
+          }else
+          {
+            _("status").innerHTML = ajax.responseText;
+            _("mybtn").disabled = false;
+          }
+        }
+        }
+        ajax.send(formdata);
+      }
+    </script>
   </head>
 
   <body class="size-1140">
@@ -24,7 +51,6 @@
                               Home
 ###########################################################################-->
     <header role="banner" class="position-absolute" id="Home">
-
 
       <div id="MenuOculto">
         <div class="publicidade">
@@ -69,28 +95,28 @@
                 <div class="Slides Slide_Logo">
                   <img src="img/Slide/Slide1.png" alt="">
                 </div>
-                <div class="Slides Slide_Logo">
+                <div class="Slides Slide_Texto">
                   <img src="img/Slide/Slide2.png" alt="">
                 </div>
-                <div class="Slides Slide_Logo">
+                <div class="Slides Slide_Texto">
                   <img src="img/Slide/Slide3.png" alt="">
                 </div>
-                <div class="Slides Slide_Logo">
+                <div class="Slides Slide_Texto">
                   <img src="img/Slide/Slide4.png" alt="">
                 </div>
-                <div class="Slides Slide_Logo">
+                <div class="Slides Slide_Texto">
                   <img src="img/Slide/Slide5.png" alt="">
                 </div>
-                <div class="Slides Slide_Logo">
+                <div class="Slides Slide_Texto">
                   <img src="img/Slide/Slide6.png" alt="">
                 </div>
-                <div class="Slides Slide_Logo">
+                <div class="Slides Slide_Texto">
                   <img src="img/Slide/Slide7.png" alt="">
                 </div>
-                <div class="Slides Slide_Logo">
+                <div class="Slides Slide_Texto">
                   <img src="img/Slide/Slide8.png" alt="">
                 </div>
-                <div class="Slides Slide_Logo">
+                <div class="Slides Slide_Texto">
                   <img src="img/Slide/Slide9.png" alt="">
                 </div>
 
@@ -607,21 +633,21 @@
       <!-- Formulário -->
         <div class="line s-12 m-12 l-6 margin-m-bottom-2x" style="padding-top: 2.5rem;" id="Formulario">
           <h4 class="text-uppercase text-strong">Cotação Online</h4>
-          <form class="customform text-white" action="mailto:marco.duran.ee@gmail.com" method="post" enctype="text/plain" accept-charset="ISO-8859-1">
+          <form id="my_form" class="customform text-white" action="" onsubmit="submitForm(); return false;" method="post" enctype="text/plain" accept-charset="ISO-8859-1">
             <div class="line">
               <div class="margin">
                 <div class="s-12 m-12 l-6">
-                  <input name="email" class="required email border-radius" placeholder="Seu e-mail" title="Seu e-mail" type="text" />
+                  <input id="e" name="email" class="required email border-radius" placeholder="Seu e-mail" title="Seu e-mail" type="text" />
                 </div>
                 <div class="s-12 m-12 l-6">
-                  <input name="nome" class="required border-radius" placeholder="Seu nome" title="Seu nome" type="text" />
+                  <input id="n" name="nome" class="required border-radius" placeholder="Seu nome" title="Seu nome" type="text" />
                 </div>
                 <div class="s-12">
-                  <textarea name="message" class="required message border-radius" placeholder="Descrição do orçamento" rows="3"></textarea>
+                  <textarea id="m" name="message" class="required message border-radius" placeholder="Descrição do orçamento" rows="3"></textarea>
                 </div>
               </div>
             </div>
-            <div class="s-12"><button class="submit-form button background-primary border-radius text-white" type="submit" style="opacity: 1;">Enviar</button></div>
+            <div class="s-12"><button id="mybtn" class="submit-form button background-primary border-radius text-white" type="submit" style="opacity: 1;">Enviar</button><span id="status"></span></div>
           </form>
         </div>
 
