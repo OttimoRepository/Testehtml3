@@ -4,27 +4,15 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    var i;
     var slides = document.getElementsByClassName("Slides");
     slideIndex++;
 
-    if (slideIndex == 4) {
-        slides[0].style.display = "none";
-        slides[1].style.display = "none";
-        slides[2].style.display = "none";
-    }
-    if (slideIndex == 8) {
-        slides[3].style.display = "none";
-        slides[4].style.display = "none";
-        slides[5].style.display = "none";
-        slides[6].style.display = "none";
-    }
-
-      if (slideIndex> slides.length) {slideIndex = 1;slides[7].style.display = "none";}
+      if (slideIndex> slides.length) {slideIndex = 1;slides[8].style.display = "none";}
       slides[slideIndex-1].style.display = "block";
+      if(slideIndex > 2){slides[slideIndex-2].style.display = "none";slides[0].style.display = "none";}
 
 
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000);
 }
 
   // Owl Carousel
@@ -78,8 +66,10 @@ function showSlides() {
 
   // Sticky Nav Bar
   $(window).scroll(function() {
+    var distancia = $('#Sobre').offset().top;
+
     if ($("#MenuOculto").hasClass("visivel")) {}else {
-      if ($(this).scrollTop() > 654){
+      if ($(this).scrollTop() >= distancia-64){
           $('.item span').css('background', '#004140');
           $('#Botão_Teste_Cont .cabeçalho_logo').css('background', '#fff');
           $('#Botão_Teste_Cont .item2 span').addClass('rolagem');
