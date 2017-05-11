@@ -62,18 +62,26 @@ h6.headline, .h6.headline {
 }
 .Slide_Home{
   position: relative;
-  background-color: #004140;
-  padding: 22rem 1.25rem;
+  background: #004140;
+  padding: 28rem 1.25rem;
+}
+.Slide_Home img{
+  display: block;
+  border: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 .Slides{
   display: none;
 }
 .Slide_Logo{
-  width: 13%;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
   position: absolute;
-  left: 23%;
-  top: 46%;
+  left: 0%;
+  top: 0%;
   animation-name: logoMove;
   animation-duration: 5s;
   /*animation-fill-mode: both;
@@ -81,68 +89,8 @@ h6.headline, .h6.headline {
 
 }
 @keyframes logoMove {
-  from{ transform: translateX(-800px);}
-  to{ transform: translateX(0px);}
-}
-.Slide_Nome{
-  width: 40%;
-  background: transparent;
-  position: absolute;
-  left: 38%;
-  top: 46%;
-  animation-name: nomeMove;
-  animation-duration: 3s;
-  /*animation-fill-mode: both;
-  animation-iteration-count: 1;
-  animation-delay: 6s;*/
-}
-@keyframes nomeMove {
-  from{ transform: translateX(-1200px);}
-  to{ transform: translateX(0px);}
-}
-.Slide_Slogan{
-  width: 40%;
-  background: transparent;
-  position: absolute;
-  left: 38%;
-  top: 69%;
-  animation-name: sloganMove;
-  animation-duration: 5s;
-  /*animation-fill-mode: both;
-  animation-iteration-count: 1;
-  animation-delay: 12s;*/
-}
-@keyframes sloganMove {
-  from{ opacity: 0;}
-  to{ opacity: 1;}
-}
-.Slide_Visual{
-  width: 80%;
-  background: transparent;
-  position: absolute;
-  left: 11%;
-  top: -7%;
-  animation-name: Slide_Visual;
-  animation-duration: 5s;
-}
-@keyframes Slide_Visual {
-  from{ opacity: 0;}
-  to{ opacity: 1;}
-}
-.Slide_Visual2{
-  width: 80%;
-  background: transparent;
-  position: absolute;
-  left: 11%;
-  top: -7%;
-  animation-name: Slide_Visual2;
-  animation-duration: 3s;
-}
-@keyframes Slide_Visual2 {
-  from{ opacity: 0.5;}
-  to{ opacity: 1;}
-}
 
+}
 
 /*999999999999999999999999999999999999999999999999999999999999999999999999999999
 999999999999999999999999999999999999999999999999999999999999999999999999999999*/
@@ -198,6 +146,8 @@ h6.headline, .h6.headline {
 	background: transparent;
 	vertical-align: middle;
 	display: inline-block;
+  text-align: center;
+  text-align: -webkit-center;
 }
 #MenuOculto .publicidade .face {
 	background: url("../img/face.png") no-repeat center;
@@ -388,9 +338,16 @@ position: absolute;
 }
 
 .LogoContato{
+  position: absolute;
   width: 22%;
   float: left;
-  height: 33vh;
+  height: 85%;
+  text-align: center;
+  text-align: -webkit-center;
+  right: 3%;
+}
+#IdentificacaoRodape{
+  width: 27%;
 }
 
 
@@ -836,11 +793,16 @@ aside.aside-left {
   opacity: .7;
 }
 .background-dark, .primary-color-dark .background-primary {
-  background-color: #004140 !important;
+  /*background-color: #004140 !important;*/
+  background-image: url(../img/Slide/ContatoBackground.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
 }
 /* Background Opacity */
 .background-white.background-transparent, .primary-color-white .background-primary.background-transparent {
   background-color: rgba(255, 255, 255, 0.85) !important;
+
 }
 .background-primary.background-transparent, .primary-color-primary .background-primary.background-transparent {
   background-color: rgba(200, 16, 16, 0.85) !important;
@@ -1530,16 +1492,101 @@ p.form-success {
   border-left: 1px solid #dd442c !important;
 }
 
+@media screen and (max-width:1700px) {
+  .Slide_Home{
+    padding: 22rem 1.25rem;
+  }
 
+}
 /* -1120px version */
 @media screen and (max-width:1120px) {
   .size-1140 .line.content-center-vertical {
       padding: 0 2rem;
   }
+/*Logo do rodapé*/
+  .LogoContato{
+    position: static;
+    width: 100%;
+    height: 320px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+#IdentificacaoRodape2{
+  padding: 0rem !important;
+  margin-top: 20px;
 }
+#IdentificacaoRodape3{
+  margin-bottom: 6px !important;
+}
+.Slide_Home{
+  padding: 16rem 0rem;
+}
+
 
 /* -768px version */
 @media screen and (max-width:768px) {
+  #IdentificacaoRodape{
+    width: 100%;
+  }
+  #IdentificacaoRodape2{
+    margin-top: 0;
+  }
+  .LogoContato{
+    margin-top: 0px;
+  }
+}
+.Slide_Home img{
+  max-width: 100%;
+  width: 100%;
+}
+.Slide_Home{
+  padding: 12rem 0rem;
+}
+#Botão_Teste_Cont{
+  width: 100%;
+}
+#Botão_Teste_Cont .cabeçalho_logo_span{
+  line-height: 4rem;
+}
+#Botão_Teste_Cont .botão_cabeçalho{
+  height: 4rem;
+}
+#MenuOculto .publicidade{
+  width: 100%;
+  height: 85px;
+  bottom: 0;
+  top: auto;
+}
+#MenuOculto .publicidade p{
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+#MenuOculto .publicidade .face{
+  width: 40px;
+  height: 40px;
+  top: 37px;
+}
+#MenuOculto .publicidade .insta{
+  width: 40px;
+  height: 40px;
+  top: 37px;
+  left: 125px;
+}
+#MenuOculto .publicidade .linkein{
+  width: 40px;
+  height: 40px;
+  top: 37px;
+  left: 175px;
+}
+#MenuOculto h2 a{
+  font-size: 1.5rem;
+  line-height: 4rem;
+  margin-left: 6.5rem;
+  top: 5.5rem;
+  position: relative;
+}
+
+
     .top-nav .right {
       float: none;
     }
@@ -1582,10 +1629,7 @@ p.form-success {
     .owl-buttons {
       display: none;
     }
-    .carousel-main .owl-item img, .carousel-main .owl-item video {
-      max-width: 250%;
-    	width:auto;
-    }
+
     .margin-m-top {
       margin-top: 1.25rem !important;
       display: block;
@@ -1883,6 +1927,14 @@ p.form-success {
 
 /* -480px version */
 @media screen and (max-width:480px) {
+    #IdentificacaoRodape2{
+      margin-bottom: 6px !important;
+    }
+
+
+
+
+
     .top-bar .right {
       float: none;
     }
